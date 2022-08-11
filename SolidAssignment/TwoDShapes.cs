@@ -11,34 +11,34 @@ namespace SolidAssignment
     {
         public float Length { get; set; }
         public float Breadth { get; set; }
-        public abstract string CalculateArea(float Length, float Breadth);
+        public abstract double CalculateArea(float Length, float Breadth);
     }
 
     // Square inherites class TwoDshapes and calculates the area of a square
     public class Square : TwoDShapes
     {
-        public override string CalculateArea(float Length, float Breadth)
+        public override double CalculateArea(float Length, float Breadth)
         {
 
-            return "The area of a square is :" + (Length * Breadth);
+            return (Length * Breadth);
         }
     }
     // Rectangle inherites class TwoDshapes and calculates the area of a Rectangle
     public class Rectangle : TwoDShapes
     {
 
-        public override string CalculateArea(float Length, float Breadth)
+        public override double CalculateArea(float Length, float Breadth)
         {
-            return "The area of a square is :" + (Length * Breadth);
+            return (Length * Breadth);
         }
     }
 
     // Rhombus inherites class TwoDshapes and calculates the area of a Rhombus
     public class Rhombus : TwoDShapes
     {
-        public override string CalculateArea(float Length, float Breadth)
+        public override double CalculateArea(float Length, float Breadth)
         {
-            return "The area of a Rhombus is :" + ((Length * Breadth) / 2);
+            return ((Length * Breadth) / 2);
         }
     }
 }
